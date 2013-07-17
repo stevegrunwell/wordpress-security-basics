@@ -17,6 +17,7 @@
       <section class="title">
         <h1>WordPress Security Basics</h1>
         <p>Steve Grunwell / <a href="https://twitter.com/stevegrunwell" rel="author">@stevegrunwell</a></p>
+        <p class="slide-link">Play along at home! <a href="http://stevegrunwell.github.io/wordpress-security-basics">stevegrunwell.github.io/wordpress-security-basics</a></p>
       </section>
 
       <section>
@@ -31,6 +32,20 @@
               <li class="fragment">Your own users</li>
             </ul>
           </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>How risk adverse are you?</h3>
+        <p><strong>Remember:</strong> Each third-party plugin or theme you install increases your level of risk</p>
+        <ul>
+          <li class="fragment">Stick to plugins from reputable authors and do your due diligence before installing
+            <ul>
+              <li>Read <em>and write</em> plugin reviews!</li>
+            </ul>
+          </li>
+          <li class="fragment">Keep your plugins up-to-date<a href="#/plugin-upgrades" title="Skip to 'Plugin Upgrades'">*</a></li>
+          <li class="fragment">Remove plugins you no longer need</li>
         </ul>
       </section>
 
@@ -71,30 +86,30 @@
       </section>
 
       <section>
-        <h2>Major <span class="normal-text">v.</span> Point Releases</h2>
+        <h3>Major <span class="normal-text">v.</span> Point Releases</h3>
         <p><strong>Major releases</strong> have version numbers like 3.6 and usually contain new features and functionality.</p>
         <p><strong>Point releases</strong> (e.g. version 3.5.2) fix bugs and patch security holes.</p>
       </section>
 
       <section>
-        <h2>Is it safe to upgrade core?</h2>
+        <h3>Is it safe to upgrade core?</h3>
         <p class="fragment"><strong>Point releases</strong> are <em>very</em> unlikely to break your site</p>
         <p class="fragment"><strong>Major releases</strong> require more extensive testing</p>
-        <p class="fragment">If you're not running a staging instance no time's better than the present</p>
+        <p class="fragment">If you're not running a staging instance no time's better than the present to get started</p>
       </section>
 
       <section>
 
         <section class="title">
-          <h2>Common reasons people don't upgrade:</h2>
+          <h3>Common reasons people don't upgrade:</h3>
         </section>
 
         <section>
-          <h3>They like pain.</h3>
+          <h4>They like pain.</h4>
         </section>
 
         <section>
-          <h3>They're afraid of breaking something</h3>
+          <h4>They're afraid of breaking something</h4>
           <ul>
             <li class="fragment">This is why we test on staging</li>
             <li class="fragment">If you're using version control and/or take backups before you upgrade you can easily roll back</li>
@@ -102,12 +117,12 @@
         </section>
 
         <section>
-          <h3>They've modified core and know they'll break something</h3>
+          <h4>They've modified core and know they'll break something</h4>
           <img src="media/ac-oh-no.gif" alt="Anderson Cooper shocked and disapproving" />
         </section>
 
         <section>
-          <h3>Somebody told them not to</h3>
+          <h4>Somebody told them not to</h4>
           <ul>
             <li class="fragment">Sometimes agencies manage site updates for you (they'll even test!)</li>
             <li class="fragment">If not you, find out who is responsible for updates and make sure they're being applied</li>
@@ -115,7 +130,7 @@
         </section>
 
         <section>
-          <h3>"But I manage several sites and it's hard to stay on top of it all!"</h3>
+          <h4>"But I manage several sites and it's hard to stay on top of it all!"</h4>
           <ul>
             <li class="fragment">Make a habit of checking the sites regularly - if a new core version comes out plan on updating them all</li>
             <li class="fragment"><a href="http://wpremote.com/" rel="external">wpremote.com</a></li>
@@ -124,16 +139,16 @@
 
       </section>
 
-      <section>
+      <section id="plugin-upgrades">
 
         <section>
-          <h2>Plugin upgrades</h2>
+          <h3>Plugin upgrades</h3>
           <p>Most plugins don't receive nearly the amount of testing and auditing as WordPress core</p>
           <p>Read upgrade notices and do your research on plugin updates, especially if you're testing on production</p>
         </section>
 
         <section>
-          <h3>What happens if something goes wrong?</h3>
+          <h4>What happens if something goes wrong?</h4>
           <ul>
             <li>Revert the plugin upgrade</li>
             <li>Post a support ticket on the plugin's WordPress.org page
@@ -143,6 +158,70 @@
             </li>
             <li><strong>If a developer doesn't know an issue exists he/she can't fix it!</strong></li>
           </ul>
+        </section>
+
+      </section>
+
+      <section class="title">
+        <h2>User Management</h2>
+      </section>
+
+      <section class="title">
+        <h3>Security begins at home</h3>
+        <p><strong>Your site is only secure as its weakest user!</strong></p>
+      </section>
+
+      <section>
+        <h3>Restrict user capabilities</h3>
+        <ul>
+          <li>Re-evaluate who has access and what level of control they have on your site</li>
+          <li>Use <a href="http://codex.wordpress.org/Roles_and_Capabilities" rel="external">WordPress roles and capabilities</a> to restrict access</li>
+          <li>Limit users' capabilities to what's needed and nothing more</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Avoid the "admin" username</h3>
+        <p>Scripts and botnets normally target "admin" as it's a default user with full privileges</p>
+        <p>Removing the default username from your site drastically reduces your risk of "drive-by" attacks ("security through obscurity")</p>
+      </section>
+
+      <section>
+        <h3>Security through obscurity</h3>
+        <p>Make it difficult for hackers to automate anything against your site by avoiding default settings, filesystem structures, or anything else a hacker might be used to</p>
+        <p>Not secure in itself but effective in reducing opportunistic hacking</p>
+        <p>"Keep your head down and hope nobody notices"</p>
+      </section>
+
+      <section>
+        <h3>Limit Login Attempts</h3>
+        <ul>
+          <li>Temporarily block an IP address after a certain number of failed login attempts</li>
+          <li>Extremely effective against brute-force attacks (inc. the bot-net)</li>
+          <li><a href="http://wordpress.org/plugins/limit-login-attempts/" rel="external">wordpress.org/plugins/limit-login-attempts/</a></li>
+        </ul>
+      </section>
+
+      <section class="title">
+        <h2>Advanced Steps</h2>
+      </section>
+
+      <section>
+
+        <section>
+          <h3>Hardening your wp-config.php</h3>
+        </section>
+
+        <section>
+          <h4>Set keys and salts</h4>
+          <img src="media/keys-salts.png" alt="The keys and salts section from a wp-config.php file" />
+          <p><a href="http://codex.wordpress.org/Editing_wp-config.php#Security_Keys" rel="external">codex.wordpress.org/Editing_wp-config.php#Security_Keys</a></p>
+        </section>
+
+        <section>
+          <h4>Moving wp-content/</h4>
+          <p>WordPress allows you to <a href="http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder" rel="external">move your wp-content/ directory to another location</a></p>
+          <p>Another example of security through obscurity</p>
         </section>
 
       </section>
