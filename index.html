@@ -6,6 +6,7 @@
 <title>WordPress Security Basics</title>
 <link href="reveal-js/css/reveal.min.css" rel="stylesheet" media="all" />
 <link href="reveal-js/css/theme/default.css" rel="stylesheet" media="all" />
+<link href="reveal-js/lib/css/zenburn.css" rel="stylesheet" media="all" />
 <link href="reveal-js/css/print/paper.css" rel="stylesheet" media="print" />
 <link href="theme/grunwell-theme.css" rel="stylesheet" media="all" />
 </head>
@@ -36,20 +37,6 @@
       </section>
 
       <section>
-        <h3>How risk adverse are you?</h3>
-        <p><strong>Remember:</strong> Each third-party plugin or theme you install increases your level of risk</p>
-        <ul>
-          <li class="fragment">Stick to plugins from reputable authors and do your due diligence before installing
-            <ul>
-              <li>Read <em>and write</em> plugin reviews!</li>
-            </ul>
-          </li>
-          <li class="fragment">Keep your plugins up-to-date<a href="#/plugin-upgrades" title="Skip to 'Plugin Upgrades'">*</a></li>
-          <li class="fragment">Remove plugins you no longer need</li>
-        </ul>
-      </section>
-
-      <section>
         <h2>Don't worry, it'll be okay</h2>
         <img src="media/make-everything-ok.gif" alt="Make everything okay" />
       </section>
@@ -63,6 +50,7 @@
         <ul>
           <li class="fragment">Passwords should be strong and unique</li>
           <li class="fragment"><em>Never</em> repeat passwords</li>
+          <li class="fragment"><a href="http://stevegrunwell.com/wp-password-generator/" rel="external">WP Password Generator</a></li>
           <li class="fragment">For your own sanity, use a password manager
             <ul class="fragment">
               <li>1Password</li>
@@ -139,7 +127,7 @@
 
       </section>
 
-      <section id="plugin-upgrades">
+      <section>
 
         <section>
           <h3>Plugin upgrades</h3>
@@ -160,6 +148,24 @@
           </ul>
         </section>
 
+      </section>
+
+      <section class="title">
+        <h2>Third-party risks</h2>
+      </section>
+
+      <section>
+        <h3>How risk adverse are you?</h3>
+        <p><strong>Remember:</strong> Each third-party plugin or theme you install increases your level of risk</p>
+        <ul>
+          <li class="fragment">Stick to extensions from reputable authors and do your due diligence before installing
+            <ul>
+              <li>Read (and write) plugin reviews!</li>
+            </ul>
+          </li>
+          <li class="fragment">Keep your plugins up-to-date</li>
+          <li class="fragment">Remove plugins you no longer need</li>
+        </ul>
       </section>
 
       <section class="title">
@@ -224,6 +230,12 @@
           <p>Another example of security through obscurity</p>
         </section>
 
+        <section>
+          <h4>Disable file editing</h4>
+          <p>WordPress constant that will disable the plugin and theme editors</p>
+          <pre><code>define( 'DISALLOW_FILE_EDIT', true );</code></pre>
+        </section>
+
       </section>
 
       <section>
@@ -238,7 +250,8 @@
     </div><!-- .slides -->
   </div><!-- .reveal -->
 
-<script src="reveal-js/js/reveal.min.js"></script>
+<script src="reveal-js/lib/js/head.min.js"></script>
+<script src="reveal-js/js/reveal.js"></script>
 <script>
   // Full list of configuration options available here:
   // https://github.com/hakimel/reveal.js#configuration
@@ -247,7 +260,10 @@
     progress: true,
     history: true,
     center: true,
-    transition: 'concave' // default/cube/page/concave/zoom/linear/fade/none
+    transition: 'concave', // default/cube/page/concave/zoom/linear/fade/none
+    dependencies: [
+      { src: 'reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+    ]
   });
 </script>
 </body>
