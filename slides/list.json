@@ -19,7 +19,7 @@
     "restrict-user-capabilities.md",
     "run-as-root.html",
     "avoid-the-admin-username.md",
-    "security-through-obscurity.md",
+    "security-through-obscurity.html",
     "security-plugins.md",
     "limit-login-attempts.md",
     "advanced-steps.md",
