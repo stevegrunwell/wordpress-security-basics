@@ -1,287 +1,322 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>WordPress Security Basics</title>
-<link href="reveal-js/css/reveal.min.css" rel="stylesheet" media="all" />
-<link href="reveal-js/css/theme/default.css" rel="stylesheet" media="all" />
-<link href="reveal-js/lib/css/zenburn.css" rel="stylesheet" media="all" />
-<link href="reveal-js/css/print/paper.css" rel="stylesheet" media="print" />
-<link href="theme/grunwell-theme.css" rel="stylesheet" media="all" />
-</head>
-<body>
-  <div class="reveal">
-    <!-- Any section element inside of this container is displayed as a slide -->
-    <div class="slides">
-      
-      <section class="wifi title">
-        <h2>Welcome to the Columbus WordPress Meetup!</h2>
-        <br>
-        <h3>Wifi credentials</h3>
-        <p>
-          <strong>DownTownTechCenter</strong><br>
-          Username: <strong>dtcguest</strong><br>
-          Password: <strong>dtcguest</strong>
-        </p>
-      </section>
 
-      <section class="title">
-        <h1>WordPress Security Basics</h1>
-        <p>Steve Grunwell / <a href="https://twitter.com/stevegrunwell" rel="author">@stevegrunwell</a></p>
-        <p class="slide-link">Play along at home! <a href="http://stevegrunwell.github.io/wordpress-security-basics">stevegrunwell.github.io/wordpress-security-basics</a></p>
-      </section>
+    <head>
+        <meta charset="utf-8">
 
-      <section>
-        <h2>How secure is WordPress?</h2>
-        <ul>
-          <li class="fragment">Generally speaking, WordPress Core is very secure</li>
-          <li class="fragment">Major threats to your WordPress site:
-            <ul>
-              <li class="fragment">Third-party themes, widgets</li>
-              <li class="fragment">Server vulnerabilities</li>
-              <li class="fragment">Exploits discovered in libraries used by core</li>
-              <li class="fragment">Your own users</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
+        <title>WordPress Security Basics</title>
 
-      <section>
-        <h2>Don't worry, it'll be okay</h2>
-        <img src="media/make-everything-ok.gif" alt="Make everything okay" />
-      </section>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-      <section class="title">
-        <h2>Passwords</h2>
-      </section>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-      <section>
-        <h2>Password Guidelines</h2>
-        <ul>
-          <li class="fragment">Passwords should be strong and unique</li>
-          <li class="fragment"><em>Never</em> repeat passwords</li>
-          <li class="fragment"><a href="http://stevegrunwell.com/wp-password-generator/" rel="external">WP Password Generator</a></li>
-          <li class="fragment">For your own sanity, use a password manager
-            <ul class="fragment">
-              <li>1Password</li>
-              <li>LastPass</li>
-              <li>KeePass</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
+    
+        <link rel="stylesheet" href="css/theme.css" id="theme">
+    
 
-      <section>
-        <h2 class="screen-reader-text">Another approach to passwords</h2>
-        <div class="figure">
-          <img src="media/password_strength.png" alt="Comic strip from xkcd regarding password security" />
-          <p class="caption">Source: <a href="https://xkcd.com/936/" rel="external">xkcd</a></p>
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+
+                
+                    
+                        
+    <section data-markdown="slides/index.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/who-am-i.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/how-secure-is-wordpress.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/dont-worry-itll-be-okay.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/passwords.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/password-guidelines.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/another-approach-to-passwords.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/keeping-wordpress-up-to-date.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/major-v-point-releases.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/is-it-safe-to-upgrade-core.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/common-reasons-people-dont-upgrade.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/knowing-who-to-blame.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/plugin-upgrades.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/third-party-risks.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/how-risk-adverse-are-you.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/user-management.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/security-begins-at-home.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/restrict-user-capabilities.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/run-as-root.html"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/avoid-the-admin-username.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/security-through-obscurity.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/security-plugins.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/limit-login-attempts.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/advanced-steps.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/set-keys-and-salts.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/moving-wp-content.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/disable-file-editing.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/wp-admin-over-ssl.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/additional-resources.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/questions.md"></section>
+
+
+                    
+                    
+                
+            </div>
+
         </div>
-      </section>
 
-      <section class="title">
-        <h2>Keeping WordPress up-to-date</h2>
-      </section>
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
 
-      <section>
-        <h3>Major <span class="normal-text">v.</span> Point Releases</h3>
-        <p><strong>Major releases</strong> have version numbers like 3.6 and usually contain new features and functionality.</p>
-        <p><strong>Point releases</strong> (e.g. version 3.5.2) fix bugs and patch security holes.</p>
-      </section>
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
-      <section>
-        <h3>Is it safe to upgrade core?</h3>
-        <p class="fragment"><strong>Point releases</strong> are <em>very</em> unlikely to break your site</p>
-        <p class="fragment"><strong>Major releases</strong> require more extensive testing</p>
-        <p class="fragment">If you're not running a staging instance no time's better than the present to get started</p>
-      </section>
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
-      <section>
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script>
 
-        <section class="title">
-          <h3>Common reasons people don't upgrade:</h3>
-        </section>
+    </body>
 
-        <section>
-          <h4>They like pain.</h4>
-        </section>
-
-        <section>
-          <h4>They're afraid of breaking something</h4>
-          <ul>
-            <li class="fragment">This is why we test on staging</li>
-            <li class="fragment">If you're using version control and/or take backups before you upgrade you can easily roll back</li>
-          </ul>
-        </section>
-
-        <section>
-          <h4>They've modified core and know they'll break something</h4>
-          <img src="media/ac-oh-no.gif" alt="Anderson Cooper shocked and disapproving" />
-        </section>
-
-        <section>
-          <h4>Somebody told them not to</h4>
-          <ul>
-            <li class="fragment">Sometimes agencies manage site updates for you (they'll even test!)</li>
-            <li class="fragment">If not you, find out who is responsible for updates and make sure they're being applied</li>
-          </ul>
-        </section>
-
-        <section>
-          <h4>"But I manage several sites and it's hard to stay on top of it all!"</h4>
-          <ul>
-            <li class="fragment">Make a habit of checking the sites regularly - if a new core version comes out plan on updating them all</li>
-            <li class="fragment"><a href="http://wpremote.com/" rel="external">wpremote.com</a></li>
-          </ul>
-        </section>
-
-      </section>
-
-      <section>
-
-        <section>
-          <h3>Plugin upgrades</h3>
-          <p>Most plugins don't receive nearly the amount of testing and auditing as WordPress core</p>
-          <p>Read upgrade notices and do your research on plugin updates, especially if you're testing on production</p>
-        </section>
-
-        <section>
-          <h4>What happens if something goes wrong?</h4>
-          <ul>
-            <li>Revert the plugin upgrade</li>
-            <li>Post a support ticket on the plugin's WordPress.org page
-              <ul>
-                <li>Premium plugins sometimes offer separate support methods</li>
-              </ul>
-            </li>
-            <li><strong>If a developer doesn't know an issue exists he/she can't fix it!</strong></li>
-          </ul>
-        </section>
-
-      </section>
-
-      <section class="title">
-        <h2>Third-party risks</h2>
-      </section>
-
-      <section>
-        <h3>How risk adverse are you?</h3>
-        <p><strong>Remember:</strong> Each third-party plugin or theme you install increases your level of risk</p>
-        <ul>
-          <li class="fragment">Stick to extensions from reputable authors and do your due diligence before installing
-            <ul>
-              <li>Read (and write) plugin reviews!</li>
-            </ul>
-          </li>
-          <li class="fragment">Keep your plugins up-to-date</li>
-          <li class="fragment">Remove plugins you no longer need</li>
-        </ul>
-      </section>
-
-      <section class="title">
-        <h2>User Management</h2>
-      </section>
-
-      <section class="title">
-        <h3>Security begins at home</h3>
-        <p><strong>Your site is only secure as its weakest user!</strong></p>
-      </section>
-
-      <section>
-        <h3>Restrict user capabilities</h3>
-        <ul>
-          <li>Re-evaluate who has access and what level of control they have on your site</li>
-          <li>Use <a href="http://codex.wordpress.org/Roles_and_Capabilities" rel="external">WordPress roles and capabilities</a> to restrict access</li>
-          <li>Limit users' capabilities to what's needed and nothing more</li>
-        </ul>
-      </section>
-
-      <section>
-        <h3>Avoid the "admin" username</h3>
-        <p>Scripts and botnets normally target "admin" as it's a default user with full privileges</p>
-        <p>Removing the default username from your site drastically reduces your risk of "drive-by" attacks ("security through obscurity")</p>
-      </section>
-
-      <section>
-        <h3>Security through obscurity</h3>
-        <p>Make it difficult for hackers to automate anything against your site by avoiding default settings, filesystem structures, or anything else a hacker might be used to</p>
-        <p>Not secure in itself but effective in reducing opportunistic hacking</p>
-        <p>"Keep your head down and hope nobody notices"</p>
-      </section>
-
-      <section>
-        <h3>Limit Login Attempts</h3>
-        <ul>
-          <li>Temporarily block an IP address after a certain number of failed login attempts</li>
-          <li>Extremely effective against brute-force attacks (inc. the bot-net)</li>
-          <li><a href="http://wordpress.org/plugins/limit-login-attempts/" rel="external">wordpress.org/plugins/limit-login-attempts/</a></li>
-        </ul>
-      </section>
-
-      <section class="title">
-        <h2>Advanced Steps</h2>
-      </section>
-
-      <section>
-
-        <section>
-          <h3>Hardening your wp-config.php</h3>
-        </section>
-
-        <section>
-          <h4>Set keys and salts</h4>
-          <img src="media/keys-salts.png" alt="The keys and salts section from a wp-config.php file" />
-          <p><a href="http://codex.wordpress.org/Editing_wp-config.php#Security_Keys" rel="external">codex.wordpress.org/Editing_wp-config.php#Security_Keys</a></p>
-        </section>
-
-        <section>
-          <h4>Moving wp-content/</h4>
-          <p>WordPress allows you to <a href="http://codex.wordpress.org/Editing_wp-config.php#Moving_wp-content_folder" rel="external">move your wp-content/ directory to another location</a></p>
-          <p>Another example of security through obscurity</p>
-        </section>
-
-        <section>
-          <h4>Disable file editing</h4>
-          <p>WordPress constant that will disable the plugin and theme editors</p>
-          <pre><code>define( 'DISALLOW_FILE_EDIT', true );</code></pre>
-        </section>
-
-      </section>
-
-      <section>
-        <h2>Additional Resources</h2>
-        <ul>
-          <li><a href="http://stevegrunwell.com/blog/wordpress-security-basics" rel="external">WordPress Security Basics</a></li>
-          <li><a href="http://codex.wordpress.org/Hardening_WordPress" rel="external">Hardening WordPress</a> (WordPress Codex)</li>
-          <li><a href="http://moz.com/blog/the-definitive-guide-to-wordpress-security" rel="external">The Definitive Guide to WordPress Security</a></li>
-        </ul>
-      </section>
-      
-      <section class="title">
-        <h2>Reminder: WordCamp Columbus</h2>
-        <p>August 2-3, 2013 @ The Ohio Union</p>
-        <p><a href="http://2013.columbus.wordcamp.org/" rel="external">2013.columbus.wordcamp.org</a></p>
-      </section>
-
-    </div><!-- .slides -->
-  </div><!-- .reveal -->
-
-<script src="reveal-js/lib/js/head.min.js"></script>
-<script src="reveal-js/js/reveal.js"></script>
-<script>
-  // Full list of configuration options available here:
-  // https://github.com/hakimel/reveal.js#configuration
-  Reveal.initialize({
-    controls: true,
-    progress: true,
-    history: true,
-    center: true,
-    transition: 'concave', // default/cube/page/concave/zoom/linear/fade/none
-    dependencies: [
-      { src: 'reveal-js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-    ]
-  });
-</script>
-</body>
 </html>

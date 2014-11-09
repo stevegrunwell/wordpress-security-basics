@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "WordPress Security Basics",
+    "packageVersion": "2.0.0",
+    "useSass": true,
+    "deployToGithubPages": true,
+    "githubUsername": "stevegrunwell",
+    "githubRepository": "wordpress-security-basics"
+  }
+}
