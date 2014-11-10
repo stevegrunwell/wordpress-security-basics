@@ -198,7 +198,8 @@ body {
   padding-bottom: 2em; }
   .reveal .figure img {
     max-width: 100%;
-    margin: 0 auto 1em; }
+    margin: 0 auto 1em;
+    max-height: 600px; }
 .figure .caption {
   display: block;
   font-size: .5em;
