@@ -1,5 +1,5 @@
 ##  Additional Resources
 
-* [WordPress Security Basics](http://stevegrunwell.com/blog/wordpress-security-basics)
-* [Hardening WordPress](http://codex.wordpress.org/Hardening_WordPress) (WordPress Codex)
-* [The Definitive Guide to WordPress Security](http://moz.com/blog/the-definitive-guide-to-wordpress-security) (Moz)
+* WordPress Security Basics<br>[stevegrunwell.com/blog/wordpress-security-basics](http://stevegrunwell.com/blog/wordpress-security-basics)
+* Hardening WordPress (WordPress Codex)<br>[codex.wordpress.org/Hardening_WordPress](http://codex.wordpress.org/Hardening_WordPress)
+* The Definitive Guide to WordPress Security (Moz)<br>[moz.com/blog/the-definitive-guide-to-wordpress-security](http://moz.com/blog/the-definitive-guide-to-wordpress-security)
